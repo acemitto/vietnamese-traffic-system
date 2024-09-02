@@ -1,0 +1,41 @@
+DEEPSORT:
+  REID_CKPT: "/Users/acemitto/Desktop/STUDY/ACE/CAPSTONE/vietnamese-traffic-system/Source/deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7"
+  MAX_DIST: 0.2
+  MIN_CONFIDENCE: 0.4
+  NMS_MAX_OVERLAP: 0.5
+  MAX_IOU_DISTANCE: 0.5
+  MAX_AGE: 30
+  N_INIT: 3
+  NN_BUDGET: 240
+  
+# MAX_DIST (Maximum Distance):
+# Ý nghĩa: Đây là ngưỡng tối đa cho khoảng cách cosine giữa các vector đặc trưng của các đối tượng.
+# Nếu khoảng cách giữa hai vector đặc trưng lớn hơn giá trị này, chúng sẽ không được liên kết với nhau.
+# Giá trị này giúp kiểm soát độ giống nhau giữa các đối tượng.
+
+# MIN_CONFIDENCE (Minimum Confidence):
+# Ý nghĩa: Đây là ngưỡng độ tin cậy tối thiểu để một đối tượng được coi là đã được phát hiện hợp lệ.
+# Các đối tượng có độ tin cậy thấp hơn giá trị này sẽ bị bỏ qua.
+# Điều này giúp giảm thiểu các phát hiện sai hoặc nhiễu.
+
+# NMS_MAX_OVERLAP (Non-Maximum Suppression Maximum Overlap):
+# Ý nghĩa: Đây là ngưỡng chồng lấn tối đa (IoU - Intersection over Union) giữa các bounding box trong quá trình Non-Maximum Suppression (NMS).
+# Nếu hai bounding box có giá trị IoU lớn hơn giá trị này, bounding box có độ tin cậy thấp hơn sẽ bị loại bỏ.
+# Điều này giúp loại bỏ các bounding box dư thừa và chỉ giữ lại bounding box tốt nhất cho mỗi đối tượng.
+
+# MAX_IOU_DISTANCE:
+# Ý nghĩa: Đây là ngưỡng tối đa cho giá trị IoU giữa các bounding box được phát hiện ở các khung hình liên tiếp để liên kết chúng với nhau.
+# Nếu giá trị IoU giữa hai bounding box nhỏ hơn giá trị này, chúng sẽ không được liên kết.
+# Điều này giúp kiểm soát mức độ chồng lấn cần thiết để xác định các đối tượng giống nhau trong các khung hình liên tiếp.
+
+# MAX_AGE:
+# Ý nghĩa: Đây là số khung hình tối đa mà một đối tượng có thể không được phát hiện trước khi bị xóa khỏi danh sách theo dõi.
+# Nếu một đối tượng không được phát hiện trong khoảng thời gian này, nó sẽ bị coi là đã biến mất.
+
+# N_INIT:
+# Ý nghĩa: Đây là số lần phát hiện liên tiếp cần thiết để xác nhận một đối tượng mới.
+# Nếu một đối tượng được phát hiện liên tiếp đủ số lần này, nó sẽ được thêm vào danh sách theo dõi chính thức.
+
+# NN_BUDGET:
+# Ý nghĩa: Đây là số lượng vector đặc trưng tối đa được lưu trữ trong bộ nhớ cho mỗi đối tượng.
+# Nếu số lượng vector đặc trưng vượt quá giá trị này, các vector cũ nhất sẽ bị loại bỏ. Điều này giúp kiểm soát bộ nhớ sử dụng và tối ưu hóa hiệu suất.

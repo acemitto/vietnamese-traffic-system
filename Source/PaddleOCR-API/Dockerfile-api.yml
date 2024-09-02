@@ -1,0 +1,7 @@
+FROM m986883511/paddleocr:env
+MAINTAINER author "https://github.com/m986883511"
+WORKDIR /m986883511
+EXPOSE 8000
+
+COPY . .
+CMD ["python3", "main.py"]

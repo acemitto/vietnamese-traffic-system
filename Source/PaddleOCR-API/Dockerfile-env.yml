@@ -1,0 +1,9 @@
+FROM paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7
+MAINTAINER author "https://github.com/m986883511"
+
+WORKDIR /build
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+RUN wget https://github.com/m986883511/PaddleOCR-API/releases/download/v0.0.1/ch_PP-OCRv3_det_infer.tar
+RUN wget https://github.com/m986883511/PaddleOCR-API/releases/download/v0.0.1/ch_PP-OCRv3_rec_infer.tar
+RUN tar -xf ch_PP-OCRv3_det_infer.tar && tar -xf ch_PP-OCRv3_rec_infer.tar

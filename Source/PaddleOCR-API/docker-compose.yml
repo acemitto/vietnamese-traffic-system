@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  web:
+    image: m986883511/paddleocr:api
+    container_name: paddleocr-api
+    environment:
+      - DET_MODEL=/build/ch_PP-OCRv3_det_infer
+      - REC_MODEL=/build/ch_PP-OCRv3_rec_infer
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
