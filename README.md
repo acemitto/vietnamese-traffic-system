@@ -12,7 +12,7 @@ The efficiency, sustainability, and livability of urban areas are improved by sm
 
 For more information, please see:
 * flowchart
-![alt text](img/flowchart_no_BG.png "Flowchar"){width=100%}
+![alt text](img/flowchart_no_BG.png "Flowchar")
 
 * Related Github
  * https://github.com/ShreyAmbesh/Traffic-Rule-Violation-Detection-System/tree/master
@@ -52,19 +52,19 @@ pip install -r requirements.txt
 ```
 
 ## App
-![alt text](img/demo.png "Image"){width=100%}
+![alt text](img/demo.png "Image")
 
 ## Violation Detection
-![alt text](img/helmet_image_detection.png "Image"){width=40%}
-![alt text](img/illegal_parking_image_detection.png "Image"){width=40%}
-![alt text](img/multi_people_image_detection.png "Image"){width=40%}
-![alt text](img/over_speed_image_detection.png "Image"){width=40%}
-![alt text](img/redlight_image_detection.png "Image"){width=40%}
-![alt text](img/wrong_lane_image_detection_2.png "Image"){width=40%}
-![alt text](img/wrong_lane_image_detection.png "Image"){width=40%}
+![alt text](img/helmet_image_detection.png "Image")
+![alt text](img/illegal_parking_image_detection.png "Image")
+![alt text](img/multi_people_image_detection.png "Image")
+![alt text](img/over_speed_image_detection.png "Image")
+![alt text](img/redlight_image_detection.png "Image")
+![alt text](img/wrong_lane_image_detection_2.png "Image")
+![alt text](img/wrong_lane_image_detection.png "Image")
 
 ## License Plate Recognition & Extraction 
-![alt text](img/license_plate.png "Image"){width=100%}
+![alt text](img/license_plate.png "Image")
 
 ## Links and References:
  * [1] Jia, W., & Xie, M. (2023). An Efficient License Plate Detection Approach With Deep Convolutional Neural Networks in Unconstrained Scenarios. IEEE Access, 11, 85626–85639. 
