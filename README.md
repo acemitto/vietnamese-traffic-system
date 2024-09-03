@@ -39,14 +39,16 @@ wpod-net
 python:3.10.13
 ```
 
-* * Enviroment & Source Code:
+* Enviroment & Source Code:
 ```sh
 git clone https://gitlab.com/Acemitto/vietnamese-traffic-system
 cd vietnamese-traffic-system
 pip install -r requirements.txt
 ```
-
-* * Run demos:
+* Source Video:
+https://drive.google.com/drive/folders/1YRJvyfyTrlYY1mtqZfVdIU6N1O1hoT6W?usp=sharing
+  
+* Run demo:
 ```
 ~/vietnamese-traffic-system/Source/main.py
 ```
